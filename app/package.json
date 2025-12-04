@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
-    "build:gh-pages": "VITE_BASE_PATH=/booking-app/ npm run build",
+    "build:gh-pages": "VITE_BASE_PATH=/booking-application/ npm run build",
     "predeploy": "npm run build:gh-pages",
     "deploy": "gh-pages -d dist",
     "lint": "eslint .",

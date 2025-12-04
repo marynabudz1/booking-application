@@ -114,8 +114,8 @@ This app is configured for automatic deployment to GitHub Pages using GitHub Act
 
 2. **Update Base Path:**
    - Open `.github/workflows/deploy.yml`
-   - Replace `/booking-app/` with your actual repository name
-   - For example, if your repo is `my-booking-app`, change it to `/my-booking-app/`
+   - Replace `/booking-application/` with your actual repository name
+   - For example, if your repo is `my-booking-application`, change it to `/my-booking-application/`
    - Also update the `VITE_BASE_PATH` in `package.json` script if needed
 
 3. **Deploy:**
