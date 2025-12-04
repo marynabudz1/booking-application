@@ -32,7 +32,7 @@ export default defineConfig([
       // Basic linting rules
       'no-console': 'warn',
       'no-debugger': 'error',
-      'no-unused-vars': 'off', // TypeScript handles this
+      'no-unused-vars': 'off',
       '@typescript-eslint/no-unused-vars': [
         'warn',
         {
