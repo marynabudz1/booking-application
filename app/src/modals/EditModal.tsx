@@ -32,7 +32,6 @@ const EditModal = ({ open, onOpenChange, booking }: EditModalProps) => {
 
   const formDefaultValues = booking
     ? {
-        guestName: booking.guestName,
         hotel: booking.hotel,
         dateFrom: booking.dateFrom,
         dateTo: booking.dateTo,

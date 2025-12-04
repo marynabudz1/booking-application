@@ -22,7 +22,6 @@ export const hasOverlappingBooking = (
   return existingBookings.some((existing) => {
     if (excludeId && existing.id === excludeId) return false
     
-    const isSameUser = existing.guestName.toLowerCase() === newBooking.guestName.toLowerCase()
     const datesOverlap = dateRangesOverlap(
       existing.dateFrom,
       existing.dateTo,
@@ -30,7 +29,7 @@ export const hasOverlappingBooking = (
       newBooking.dateTo
     )
 
-    return isSameUser && datesOverlap
+    return datesOverlap
   })
 }
 

@@ -2,16 +2,6 @@ import type { BookingFormField } from "~/types"
 
 export const BOOKING_FORM_FIELDS: BookingFormField[] = [
   {
-    id: 'guestName',
-    label: 'Guest Name',
-    placeholder: 'Enter guest name',
-    type: 'text',
-    required: true,
-    validation: {
-      required: 'Guest name is required',
-    },
-  },
-  {
     id: 'dateFrom',
     label: 'From Date',
     type: 'date',
@@ -43,7 +33,6 @@ export const BOOKING_FORM_FIELDS: BookingFormField[] = [
 ]
 
 export const DEFAULT_BOOKING_FORM_DATA = {
-  guestName: '',
   dateFrom: '',
   dateTo: '',
   time: '',

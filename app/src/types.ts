@@ -46,7 +46,6 @@ export interface Hotel {
 export interface Booking {
   id?: string
   bookingReference?: string
-  guestName: string
   hotel: Hotel
   dateFrom: string
   dateTo: string
@@ -55,7 +54,6 @@ export interface Booking {
 }
 
 export interface BookingFormData {
-  guestName: string
   hotel: Hotel
   dateFrom: string
   dateTo: string
@@ -87,7 +85,7 @@ export interface BookingFormProps {
 }
 
 export interface BookingFormField {
-  id: 'guestName' | 'dateFrom' | 'dateTo' | 'time' | 'notes'
+  id: 'dateFrom' | 'dateTo' | 'time' | 'notes'
   label: string
   placeholder?: string
   type: 'text' | 'date' | 'time' | 'textarea'

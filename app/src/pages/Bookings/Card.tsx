@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { 
-  faCalendar, faClock, faPencil, faTrash, faUser, faHotel, faHashtag,
+  faCalendar, faClock, faPencil, faTrash, faHotel, faHashtag,
 } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
@@ -21,9 +21,9 @@ const BookingCard = ({ booking }: BookingCardProps) => {
       <div className="space-y-4">
         <div className='flex justify-between'>
           <div className="flex items-center gap-2">
-            <FontAwesomeIcon icon={faUser} className="h-5 w-5 text-primary" />
+            <FontAwesomeIcon icon={faHotel} className="h-5 w-5 text-primary" />
             <h3 className="text-xl font-semibold text-foreground">
-              {booking.guestName}
+              {booking.hotel?.name}
             </h3>
           </div>
           <div className="flex gap-2 opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity">
@@ -52,13 +52,6 @@ const BookingCard = ({ booking }: BookingCardProps) => {
           <span className="font-mono">{booking.bookingReference}</span>
         </div>
       )}
-      <div className="flex items-center gap-2 text-secondary-foreground mt-4">
-        <FontAwesomeIcon
-          icon={faHotel}
-          className="h-4 w-4 text-primary"
-        />
-        <span className="font-medium">{booking.hotel?.name}</span>
-      </div>
 
       <div className="space-y-3 mt-4">
         <div className="flex items-center gap-2 text-muted-foreground">
